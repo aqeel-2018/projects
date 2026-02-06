@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Grades Analyzer - JavaScript Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 15px;
+      background: #f7f9fc;
+      color: #333;
+    }
+    h1 {
+      color: #005f99;
+      text-align: center;
+    }
+    pre {
+      background: #e1ecf9;
+      padding: 15px;
+      border-radius: 5px;
+      white-space: pre-wrap;
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #005f99;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #004f7a;
+    }
+    label, textarea {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    textarea {
+      height: 60px;
+      font-family: monospace;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Grades Analyzer</h1>
+
+  <label for="gradesInput">Enter student grades (comma separated):</label>
+  <textarea id="gradesInput" placeholder="Example: 78, 92, 45, 88, 67, 54, 99, 73, 81, 49">78, 92, 45, 88, 67, 54, 99, 73, 81, 49</textarea>
+
+  <button id="analyzeBtn">Analyze Grades</button>
+
+  <pre id="reportOutput"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
